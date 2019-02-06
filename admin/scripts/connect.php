@@ -1,7 +1,7 @@
 <?php 
 $db_dsn = array(
 	'host'=>'localhost',
-	'dbname'=>'db_movies',
+	'dbname'=>'movie_review',
 	'charset'=>'utf8'
 );
 
@@ -9,7 +9,7 @@ $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
 
 //This is the DB credentials
 $db_user = 'root';
-$db_pass = '';
+$db_pass = 'root';
 
 try{
 	$pdo = new PDO($dsn, $db_user, $db_pass);
